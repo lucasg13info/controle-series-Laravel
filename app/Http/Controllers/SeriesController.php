@@ -13,6 +13,8 @@ class SeriesController extends Controller
             'Agents of SHIELD'
         ];
     
-        return view('series.index');
+        return view('series.index', [
+            'series' => $series
+        ]);
     }
 };

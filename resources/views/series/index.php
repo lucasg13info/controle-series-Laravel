@@ -7,6 +7,10 @@
     <title>Controle de Séries</title>
 </head>
 <body>
-    Olá Mundo, Séries!
+    <ul>
+        <?php foreach ($series as $serie): ?>
+            <li> <?= $serie; ?> </li>
+        <?php endforeach; ?>
+    </ul>
 </body>
 </html>
